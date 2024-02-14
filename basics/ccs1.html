@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - Grid</title>
+    <style>
+    div{
+        box-shadow: 0 0 3px red;
+        border-radius: 50px;
+        padding: 1rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 1rem;
+    }
+    h1{
+        text-align: center;
+        margin: 0;
+    }
+    #box1, #box3{
+        display: grid;
+        place-items: center;
+    }
+    #box3{
+        background-color: yellow;
+        display: grid;
+        place-items: center;
+    }
+  
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1">
+            <article>
+            <h1>Django</h1>
+            <button>know more</button>
+            </article>
+        </div>
+        <div>
+            <p>Nulla et iusto, enim exercitationem eaque earum accusantium quasi dolorum sed ipsum sequi iste aliquam, necessitatibus officia. Eligendi impedit beatae soluta unde nihil dolores ea ex. Dicta, et? Veritatis, provident.</p>
+        </div>
+        <div id="box3" >
+        <h1>HTML</h1>       
+        <button>Know more</button> </div>
+        <div>
+            <p>Facilis laboriosam iure incidunt assumenda! Cumque delectus labore a minus temporibus iste optio vel. Eligendi, tempora, ducimus a est similique ex deserunt commodi ratione accusantium tenetur culpa saepe! Provident, commodi.</p>
+        </div>
+        <div>
+            <p>Suscipit inventore assumenda cumque nulla corporis voluptates adipisci vero ipsam consequuntur delectus ducimus, explicabo, ipsa consectetur autem officia necessitatibus numquam dolorum quos! Quo fugiat officia iusto ducimus. Pariatur, praesentium ratione!</p>
+        </div>
+        <div>
+            <p>Cupiditate tempore asperiores, mollitia non nisi natus debitis. Sunt blanditiis fuga perferendis error dolorem cumque, rem pariatur ad provident saepe illum nihil optio, accusamus veritatis expedita, non dolore quidem accusantium.</p>
+        </div>
+    </main>`
+</body>
+</html>
