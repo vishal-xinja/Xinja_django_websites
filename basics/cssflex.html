@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /*CSS Reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(217, 236, 236);
+            padding: 1rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 2rem;
+        }
+        ul>li{flex-grow: 0;}
+        li{
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        a{
+            display: block;
+            text-decoration:none;
+            color: blue;
+            padding: .5rem 1rem;
+            transition: all 3ms;
+        }
+        a:hover{
+            
+            color: rgb(232, 124, 8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Playground</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+    </header></body>
+</html>
