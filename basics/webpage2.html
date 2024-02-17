@@ -11,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+       
         section{
             height: 100vh;
             display: grid;
@@ -18,7 +19,8 @@
         }
         .container{
             display: flex;
-            outline: 2px solid black;
+            justify-content: center;
+            
         }
         h1{
             font-size: 3rem;
@@ -28,15 +30,95 @@
         h1>span{
             font-weight: lighter;
         }
+        #s1{
+            background-image: url(BG.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .leftcol{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+        }
+        .leftcol div:nth-child(1){
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .leftcol a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        .leftcol img{
+            border-radius: 10%;
+            border: 2px solid black;
+        }
+
+        .cta{
+            font-size: 1.5rem !important;
+            padding: .5rem 3rem;
+            color: white !important;
+            background-color: rgb(43, 116, 218);
+            border-radius: 5rem;
+        }
+
+        .intro{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(174, 174, 174);
+            gap: 2rem;
+            padding: 5rem 2rem;
+            width: 40%;
+        }
+
+        .intro h2{
+            font-size: 4rem;
+            color: rgb(65, 65,250);
+        }
+
+        .intro p{
+            font-size: 2rem;
+            color: rgb(60, 59, 59);
+        }
+
+        .owners{
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .owners .i1{
+            align-self: flex-start;
+            border-radius: 3rem;
+        }
+        
+        .owners .i2{
+            align-self: flex-end ;
+            border-radius: 3rem;
+        }
+
+        .c2{
+            gap: 3rem;
+        }
+
     </style>
 </head>
 
 <body>
-    <section>
+    <section id="s1">
         <div class="container">
             <div class="leftcol">
-                <img src="bbd-group-1.png" alt="logo" height="52" width="93">
-                <a href="#">Zimcore <br>hubs</a>
+                <div>
+                <img src="Playstation-5-Symbol.png" alt="logo" height="55" width="100">
+                <a href="#">Sony<br>media</a>
+                </div>
                 <h1>
                     <span>Changing the world</span><br>one app at a time
                 </h1>
@@ -45,23 +127,24 @@
                 </div>
             </div>
             <div class="rightcol">
-                <img src="—Pngtree—anime character boring_5362755.png" alt="hero" height="500px">
+                <img src="spiderman.png" alt="hero" height="500px">
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="leftcol">
-                <div>
+            <div class="intro">
+                
                     <h2>our company story</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut, vitae enim debitis, iste
                         maxime voluptatum blanditiis perferendis natus officia voluptate. Praesentium esse distinctio
-                        magnam.</p>
-                </div>
+                        magnam.
+                    </p>
+                
             </div>
-            <div class="rightcol">
-                <img src="SPIDERMAN1.jpg" alt="" height="300" >
-                <img src="SPIDERMAN2.jpg" alt="" height="300">
+            <div class="owners">
+                <img class="i1" src="SPIDERMAN1.jpg" alt="" height="300" >
+                <img class="i2" src="SPIDERMAN2.jpg" alt="" height="300">
             </div>
         </div>
     </section>
